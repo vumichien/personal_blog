@@ -1,0 +1,42 @@
+---
+layout: home
+title: Vu Minh Chien
+subtitle: PhD | Material Researcher | Data Scientist 
+meta-title: "Hi, I'm Chien"
+use-site-title: true
+cover-img:
+ - "/img/banner.png"
+---
+{% if paginator.total_pages > 1 %}
+<ul class="pager main-pager">
+  {% if paginator.previous_page %}
+  <li class="previous">
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+  </li>
+  {% endif %}
+  {% if paginator.next_page %}
+  <li class="next">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+  </li>
+  {% endif %}
+</ul>
+{% endif %}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js"></script>
+<script src="https://www.vantajs.com/dist/vanta.net.min.js"></script>
+<script> 
+VANTA.NET({
+  el: "#vantajs",
+  mouseControls: true,
+  touchControls: true,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0xcac6c7,
+  backgroundColor: 0x0,
+  points: 11.00,
+  spacing: 20.00
+})
+</script>
+
